@@ -13,4 +13,4 @@ RUN mvn package -am -Dmaven.test.skip -T 1C
 RUN cp /app/boxfuse-sample-java-war-hello/target/hello-1.0.war /var/lib/tomcat9/webapps/hello-1.0.war
 
 EXPOSE 8080
-CMD ["systemctl", "start", "tomcat9"]
+CMD ["service", "tomcat9", "start"]
