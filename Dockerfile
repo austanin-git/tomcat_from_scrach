@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 RUN apt-get update
 RUN apt-get upgrade
 RUN apt-get install git -y
-RUN apt-get install default-jdk -y
+RUN apt-get -y install openjdk-8-jdk wget
 RUN apt-get install maven -y
 
 RUN mkdir /usr/local/tomcat
